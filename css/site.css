@@ -208,10 +208,10 @@ body{background:#333}
 .thumb_cursor{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-20px;pointer-events:none;}
 .thumb_cursor img{width:100px;height:100px;}
 /* .scrollable-content{height:345px;} */
-.scroll_Up{position:absolute;top:238px;left:50%;transform:translateX(-50%);padding:10px 0;letter-spacing:.8px;font-size:14px;opacity:.7;color:#fff;}
+.scroll_Up{position:absolute;top:-60px;left:50%;transform:translateX(-50%);padding:10px 0;letter-spacing:.8px;font-size:14px;opacity:.7;color:#fff;}
 .scroll_Up:before{content:'';position:absolute;top:0px;left:42.5%;transform:translateX(-50%)rotate(50deg);width:2px;height:10px;background:rgba(255,255,255,.7);}
 .scroll_Up:after{content:'';position:absolute;top:0px;right:42.5%;transform:translateX(-50%)rotate(-50deg);width:2px;height:10px;background:rgba(255,255,255,.7)}
-.scroll_Down{position:absolute;bottom:98px;left:50%;transform:translateX(-50%);padding:10px 0;letter-spacing:.8px;font-size:14px;opacity:.7;color:#fff;}
+.scroll_Down{position:absolute;bottom:-60px;left:50%;transform:translateX(-50%);padding:10px 0;letter-spacing:.8px;font-size:14px;opacity:.7;color:#fff;}
 .scroll_Down:before{content:'';position:absolute;bottom:0px;left:43.795%;transform:translateX(-50%)rotate(122deg);width:2px;height:10px;background:rgba(255,255,255,.7);}
 .scroll_Down:after{content:'';position:absolute;bottom:0px;right:43.795%;transform:translateX(-50%)rotate(-122deg);width:2px;height:10px;background:rgba(255,255,255,.7)}
 
