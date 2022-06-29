@@ -77,7 +77,7 @@ body{background:#333}
 #container .company{background-image:url(../images/company/bg.jpg);}
 #container .business{background-image:url(../images/business/bg.jpg);}
 #container .pepole{background-image:url(../images/pepole/bg.jpg);}
-#container .portpolio{background-image:url(../images/portpolio/bg.png);}
+#container .portpolio{background-image:url(../images/portpolio/bg.png);background-position:center center;background-size:cover;}
 #container .location{background-image:url(../images/location/bg.jpg);}
 #container .portpolio .fp-tableCell{vertical-align:top!important;}
 
@@ -138,7 +138,7 @@ body{background:#333}
 
 
 /****스크롤 슬라이드******/
- .square_line{width:440px;height:390px;border:5px solid #fff;position: absolute;top: 0px;left: 0px;transition:0.5s;opacity:.5;}
+ .square_line{width:440px;height:390px;border:5px solid #fff;position: absolute;top: 0px;left: 0px;transition:0.5s;opacity:1;}
  /* .square_line span:first-of-type{position:absolute;top:-5px;left:0px;height:5px;width:0%;background:#fff;z-index: 10;opacity:0;transition:all 2s;}
  .square_line span:nth-of-type(2){position:absolute;top:0px;right:-5px;height:0%;width:5px;background:#fff;z-index: 10;opacity:0;transition:all .6s;}
  .square_line span:nth-of-type(3){position:absolute;bottom:-5px;right:0px;height:5px;width:0%;background:rgb(11, 231, 202);z-index: 10;opacity:0;transition:all .6s;}
@@ -158,7 +158,7 @@ body{background:#333}
  .content>span {font-size: 32px;color: #fff;font-weight: bold;line-height:40px;/*    opacity: 0.5;*/}
 /*.more_ex {margin-top:52px;text-align:right;box-sizing:border-box;padding-right:93px;}*/
 
-.more_ex {position:absolute; top:50%; right:280px; margin-top:268px;z-index:1;}
+.more_ex {position: absolute;bottom: -17px;right: 280px;/* margin-top: 268px; */z-index: 1;}
 .more_ex a {position:relative;display:inline-block;letter-spacing:.8px;font-weight:500;font-size:16px;line-height:40px;color:#fff;text-decoration:none;opacity:0.5;transition:0.5s;}
 .more_ex a:hover {opacity:1;}
 .more_ex a:after {content:'';position:absolute;right:-15px;top:56%;transform:translateY(-50%);background:url(../images/portpolio/icon_puls.png) 0 0 no-repeat;width:12px;height:12px;transition:0.5s;}
@@ -171,7 +171,7 @@ body{background:#333}
 .mg{display:flex;position:absolute; top:0; left:200px; width:100000px; /* padding-left:200px; */ margin-top:0;overflow:hidden; opacity:0;}
 .mg.on {left:0px;}
 .mg.on.fix {padding-left:200px;opacity:1; transition: 1s;}
-.mg>li {position: relative;/*float: left;*/width:460px;height:450px;margin-left:50px;padding:50px 44px 0 44px; box-sizing:border-box;transition:0.5s;}
+.mg>li {position: relative;/*float: left;*/width:460px;height:450px;margin-left:50px;padding:50px 44px 0 44px; box-sizing:border-box;opacity:.5;transition:0.5s;}
 .mg>li:first-child {margin-left:0;} 
 .mg>li:hover {opacity:1;}
 .mg>li:hover .square_line {opacity:1;}
@@ -185,8 +185,8 @@ body{background:#333}
 .mg p {position:relative;display:inline-block;line-height:40px;font-size:16px; color: #fff; font-weight: 400; margin-bottom: 17px;padding-bottom:2px;}
 .mg p:after{content:'';position:absolute;left:0px;bottom:0px;width:100%;height:2px;background:#fff;opacity:1}
 .mg .line {width: 360px; height: 4px; margin-bottom: 40px; background-color: #fff;}
-.mg span {display:block;font-size:50px; color: #fff; font-weight: bold; line-height:60px;}
-.slide-scroll-bar {position: absolute; top:50%; left: 0px; width:100%; height:3px; margin-top:290px;transform:translateY(-50%);overflow: hidden;}
+.mg span {display:block;font-size:40px;line-height:50px;word-break:keep-all;font-weight: bold;color: #fff; }
+.slide-scroll-bar {position: absolute;bottom: 0;left: 0px;width: 100%;height: 3px; /* margin-top: 290px; */ /* transform: translateY(-50%); */ overflow: hidden;}
 .slide-scroll-bar .slide-bar {height: 100%; position: relative;margin:0 342px 0 200px;background: rgba(255, 255, 255, .5)}
 .slide-scroll-bar .handle{background-color: #f51a34; width: 0; height:3px; position: absolute; top: 0; left: 0; -webkit-transform-origin: left top; transform-origin: left top;}
 .bgDom {position:fixed; top:0; right:0; bottom:0; left:0; width:100%; height:100%; min-width:1080px; background-size:cover; background-position:center; opacity:0; transition:1.5s;}
@@ -195,7 +195,7 @@ body{background:#333}
 
 /* bm */
 .bm-hero-header, .bm-hero-text {font-size:0;}
-.bm-view {position:relative;height:450px;padding-top:317px;}
+.bm-view {position: absolute;width:100%;height: 450px;/* padding-top: 317px; */top: 50%;transform: translate(0,-50%);margin-top: 90px;}
 /* .bm-view:before{content:'';content:'';position:absolute;top:50%;right:108px;height:341px;width:41px;transform:translateY(-50%);background:url(../images/portpolio/slide_bar.png) 0 0 no-repeat;opacity:.35;} */
 .bm-content {height:100%;}
 .bm-screen {height: 100%;}
@@ -205,7 +205,7 @@ body{background:#333}
 .bm-content .scroll-content {height:100%; /* will-change: transform; */}
 .bm-content .scrollbar-track {display: none !important;}
 .clearfix:after {content: "";display: block;height: 0;clear: both;}
-.thumb_cursor{position:absolute;top:50%;left:50%;transform:translateY(-50%,-50%);pointer-events:none;}
+.thumb_cursor{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);margin-top:-20px;pointer-events:none;}
 .thumb_cursor img{width:100px;height:100px;}
 /* .scrollable-content{height:345px;} */
 .scroll_Up{position:absolute;top:238px;left:50%;transform:translateX(-50%);padding:10px 0;letter-spacing:.8px;font-size:14px;opacity:.7;color:#fff;}
@@ -230,7 +230,8 @@ body{background:#333}
 .gd-modal{position: fixed;left:100%;top:0;min-height: 100%;width: 100%;z-index:50000000000;text-align: center;background: rgba(0, 0, 0, .8);-webkit-transition: -webkit-transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99);transition: -webkit-transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99); transition: transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99);overflow-y:auto;overflow-x:hidden;}
 .gd-modal.opened {-webkit-transform: translateX(-100%) translateZ(0);transform: translateX(-100%) translateZ(0);}
 .gd-close {position: absolute;top: 30px;right: 50px;z-index:1;}
-.gd-inner{position: absolute;top:0;width:100%;height:100%;left:0;}
+.gd-close.morpop{width:60px;height:60px;border-radius:100%;background:#000 url(../images/portpolio/pop_close.png) center center no-repeat;text-indent:-9999px}
+.gd-inner{position: absolute;top:0;width:100%;height:100%;left:0;background:#fff;}
 .gd-inner .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ height:80px;}
 .gd-inner .mCSB_inside > .mCSB_container{margin-right:0px;}
 .gd-inner .mCSB_scrollTools .mCSB_draggerRail{background:transparent;}
@@ -239,6 +240,7 @@ body{background:#333}
 .gd-inner .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background:#f12f2f;opacity:.85;}
 .gd-inner .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background:#f12f2f;opacity:.85;}
 .gd-wrapper{position:relative;padding:915px 260px 40px 260px;background-size:100% 650px;background-repeat:no-repeat;background-color:#fff;color:#000;}
+.gd-wrapper.more{padding-top:120px;}
 .project_visual{position:absolute;width:100%;top:60px;left:50%;transform:translateX(-50%);}
 .gd-wrapper[data-bg="01"]{background-image: url(../images/portpolio/project_bg-01.jpg);}
 .gd-wrapper[data-bg="02"]{background-image: url(../images/portpolio/project_bg-02.jpg);}
@@ -270,11 +272,26 @@ body{background:#333}
 .gd-wrapper[data-bg="28"]{background-image: url(../images/portpolio/project_bg-28.jpg);}
 .gd-wrapper[data-bg="29"]{background-image: url(../images/portpolio/project_bg-29.jpg);}
 .projext-detail{width:1350px;}
+.gd-wrapper.more h3 span{position:relative;}
+.gd-wrapper.more h3 span:after{content:'';position:absolute;right:-14px;bottom:15px;width:8px;height:8px;border-radius:100%;background:#f93434}
 .projext-detail h3{padding-bottom:28px;margin-bottom:26px;border-bottom:1px solid #ddd;text-align:left;font-size:70px;line-height:60px;letter-spacing:-1.77px;}
 .projext-detail dl{display:flex;text-align:left;color:#676767;}
-.projext-detail dl>dt{flex:2}
-.projext-detail dl>dd{text-align:left;flex:3;line-height:40px;letter-spacing:-.5px;font-size:20px;}
-.projext-detail dl strong{display:block;line-height:60px;letter-spacing:-.6px;font-size:24px;color:#000;}
+.projext-detail dl.morebox{align-items:center;}
+.projext-detail dl>dt.cologo{flex:none;width:125px;}
+.projext-detail dl>dt{flex:2;font-weight:300;font-size:20px;}
+.projext-detail dl>dt .co_name{position:relative;display:block;padding-left:90px;letter-spacing:-.5px;font-weight:300;font-size:20px;}
+.projext-detail dl>dt .co_name:before{content:'Client';position:absolute;top:50%;transform:translateY(-50%);left:0px;font-weight:600;font-size:24px;color:#000;}
+.projext-detail dl>dt .co_year{position:relative;display:block;padding-left:90px;letter-spacing:-.5px;font-weight:300;font-size:20px;}
+.projext-detail dl>dt .co_year:before{content:'Date';position:absolute;top:50%;transform:translateY(-50%);left:0px;font-weight:600;font-size:24px;color:#000;}
+.projext-detail dl>dd{text-align:left;flex:3;word-break:keep-all;line-height:40px;letter-spacing:-.5px;font-weight:300;font-size:20px;}
+.projext-detail dl>dt.morcont{padding-left:50px}
+.projext-detail dl>dt ul{display:flex;flex-wrap:wrap;}
+.projext-detail dl>dt ul li{margin-right:184px;}
+.projext-detail dl>dt ul li:last-of-type{margin-left:0;}
+.projext-detail dl>dt.morcont div{margin-top:15px;line-height:40px;font-weight:300;font-size:20px;}
+.projext-detail dl strong{display:block;margin-bottom:15px;letter-spacing:-.6px;font-size:24px;color:#000;}
+.mt30{margin-top:30px;}
+.mb80{margin-bottom:80px;}
 
 /* animation */
 .animated{-webkit-animation-duration:0.8s;animation-duration:0.8s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
