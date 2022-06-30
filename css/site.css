@@ -170,7 +170,7 @@ body{background:#333}
 .mg{display:flex;position:absolute; top:0; left:200px; width:100000px; /* padding-left:200px; */padding-right:100px;margin-top:0;overflow:hidden; opacity:0;}
 /* .mg.on {left:450px;} */
 /* .mg.on.fix{opacity:1; transition: 1s;} */
-.mg>li {position: relative;/*float: left;*/width:500px;height:440px;padding:50px 44px 0 44px; box-sizing:border-box;opacity:.5;transition:0.5s;}
+.mg>li {position: relative;/*float: left;*/width:500px;height:440px;padding:50px 94px 0 44px; box-sizing:border-box;opacity:.5;transition:0.5s;}
 .mg>li:first-child {margin-left:0;} 
 .mg>li:hover {opacity:1;}
 .mg>li:hover .square_line {opacity:1;}
