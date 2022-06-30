@@ -227,7 +227,7 @@ body{background:#333}
 .modal_dim{position: fixed;left: 0;top: 100%;min-height: 100%;width: 100%;z-index:500000;text-align: center;background: rgba(235, 2, 2, 0.8);-webkit-transition: -webkit-transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99);transition: -webkit-transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99); transition: transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99);}
 .modal_dim.opened{-webkit-transform: translateY(-100%) translateZ(0);transform: translateY(-100%) translateZ(0);}
 .modal_dim.closed {-webkit-transform: translateY(0) translateZ(0);transform: translateY(0) translateZ(0);}
-.gd-modal{position: fixed;left:100%;top:0;min-height: 100%;width: 100%;z-index:50000000000;text-align: center;background: rgba(0, 0, 0, .8);-webkit-transition: -webkit-transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99);transition: -webkit-transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99); transition: transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99);overflow-y:auto;overflow-x:hidden;}
+.gd-modal{position: fixed;left:100%;top:0;min-height: 100%;width: 100%;z-index:50000000000;text-align: center;background: rgba(0, 0, 0, .8);-webkit-transition: -webkit-transform 200ms cubic-bezier(0.48, 0.01, 0.48, 0.99);transition: -webkit-transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99); transition: transform 450ms cubic-bezier(0.48, 0.01, 0.48, 0.99);/*overflow-y:auto;*/overflow-x:hidden;}
 .gd-modal.opened {-webkit-transform: translateX(-100%) translateZ(0);transform: translateX(-100%) translateZ(0);}
 .gd-close {position: absolute;top: 30px;right: 50px;z-index:1;}
 .gd-close.morpop{width:60px;height:60px;border-radius:100%;background:#000 url(../images/portpolio/pop_close.png) center center no-repeat;text-indent:-9999px}
