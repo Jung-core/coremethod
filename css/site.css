@@ -239,9 +239,10 @@ body{background:#333}
 .gd-inner .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .gd-inner .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{background:#f12f2f;opacity:.85;}
 .gd-inner .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background:#f12f2f;opacity:.85;}
-.gd-wrapper{position:relative;padding:915px 260px 40px 260px;background-size:100% 650px;background-repeat:no-repeat;background-color:#fff;color:#000;}
+.gd-wrapper{position:relative;padding:800px 260px 40px 260px;background-size:100% 650px;background-repeat:no-repeat;background-color:#fff;color:#000;}
 .gd-wrapper.more{padding-top:120px;}
 .project_visual{position:absolute;width:100%;top:60px;left:50%;transform:translateX(-50%);}
+.project_visual img{width:1150px;height:auto;}
 .gd-wrapper[data-bg="01"]{background-image: url(../images/portpolio/project_bg-01.jpg);}
 .gd-wrapper[data-bg="02"]{background-image: url(../images/portpolio/project_bg-02.jpg);}
 .gd-wrapper[data-bg="03"]{background-image: url(../images/portpolio/project_bg-03.jpg);}
@@ -274,7 +275,7 @@ body{background:#333}
 /* .projext-detail{max-width:1350px;} */
 .gd-wrapper.more h3 span{position:relative;}
 .gd-wrapper.more h3 span:after{content:'';position:absolute;right:-14px;bottom:15px;width:8px;height:8px;border-radius:100%;background:#f93434}
-.projext-detail h3{padding-bottom:28px;margin-bottom:26px;border-bottom:1px solid #ddd;text-align:left;font-size:70px;line-height:60px;letter-spacing:-1.77px;}
+.projext-detail h3{padding-bottom:28px;margin-bottom:26px;border-bottom:1px solid #ddd;text-align:left;font-size:50px;line-height:50px;letter-spacing:-1.77px;}
 .projext-detail dl{display:flex;text-align:left;color:#676767;}
 .projext-detail dl.morebox{align-items:center;}
 .projext-detail dl>dt.cologo{flex:none;width:125px;}
