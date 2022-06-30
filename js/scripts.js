@@ -240,10 +240,10 @@ $(document).ready(function(){
 	$('.mg').width(mgwFix);
 	$(dmpBar).insertAfter('.mg');
 	$('.dmbBar').width(mgwFix);
-	$('.mg').addClass('on');
-	setTimeout(function(){
-		$('.mg').addClass('fix');
-	}, 300);
+	// $('.mg').addClass('on');
+	// setTimeout(function(){
+	// 	$('.mg').addClass('fix');
+	// }, 300);
 
     const isOnce = false;// 진입마다 효과를 반복적으로 주고 싶으면 아래 값을 false로 변경
     if ($(window).width() > 1000){
