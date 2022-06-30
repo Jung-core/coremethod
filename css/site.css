@@ -167,10 +167,10 @@ body{background:#333}
 .main_cntents_wrap .handle{background-color: #fff;/* width: 100%; */width: 0;height: 2px;position: absolute;top: 0;left: 0;-webkit-transform-origin: left top;transform-origin: left top;transition:0.3s;}
 
 /*===============================================*/
-.mg{display:flex;position:absolute; top:0; left:200px; width:100000px; /* padding-left:200px; */padding-right:100px;margin-top:0;overflow:hidden; opacity:0;}
+.mg{display:flex;position:absolute; top:0; left:200px; width:100000px; /* padding-left:200px; */padding-right:0px;margin-top:0;overflow:hidden; opacity:0;}
 /* .mg.on {left:450px;} */
 /* .mg.on.fix{opacity:1; transition: 1s;} */
-.mg>li {position: relative;/*float: left;*/width:500px;height:440px;padding:50px 94px 0 44px; box-sizing:border-box;opacity:.5;transition:0.5s;}
+.mg>li {position: relative;/*float: left;*/width:500px;height:440px;margin-right:auto;padding:50px 94px 0 44px;box-sizing:border-box;opacity:.5;transition:0.5s;}
 .mg>li:first-child {margin-left:0;} 
 .mg>li:hover {opacity:1;}
 .mg>li:hover .square_line {opacity:1;}
